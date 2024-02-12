@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Form Validation</title>
+
+    <!-- Default CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/d4aaca8c69.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="image">
+                <div class="text">Start for free & get <br>
+                attractive offers today !
+            </div>
+        </div>
+        </div>
+        
+        <form id="form">
+
+            <div class="social">
+                <div class="title">Get Started</div>
+                <div class="quetion">Already have an account? 
+                    <br>
+                    <span class="signin">Sign in</span>
+                </div>
+
+                <div class="btn">
+                    <div class="btn-1"><img width="30" height="30" src="https://img.icons8.com/color/48/google-logo.png" alt="google-logo"/> Sign Up</div>
+                    <div class="btn-2"><img width="20" height="20" src="https://img.icons8.com/android/24/ffffff/facebook-new.png" alt="facebook-new"/> Sign Up</div>
+                </div>
+
+                <div class="or">Or</div>
+
+            </div>
+
+            <!-- userName Input Here -->
+            <div class="row">
+                <label for="username">User Name</label>
+                <i class="fa-solid fa-user"></i>
+                <input type="text" name="username" id="username" placeholder="Lalit Pawar">
+                <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+                <i class="fa-solid fa-circle-check success-icon"></i>
+                <div class="error"></div>
+            </div>
+
+            <!-- Email Input Here -->
+            <div class="row">
+                <label for="email">Email</label>
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" name="email" id="email" placeholder="abc@gmail.com">
+                <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+                <i class="fa-solid fa-circle-check success-icon"></i>                
+                <div class="error"></div>
+            </div>
+
+            <!-- Password Input Here -->
+            <div class="row">
+                <label for="password">Password</label>
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" name="password" id="password" placeholder="Password Here">
+                <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+                <i class="fa-solid fa-circle-check success-icon"></i>
+                <div class="error"></div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" id="submit">Submit</button>
+
+        </form>
+
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
